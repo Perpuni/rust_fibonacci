@@ -39,4 +39,6 @@ fn main() {
 
         break;
     }
+
+    println!("Enter any key to exit");
 }
