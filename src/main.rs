@@ -1,4 +1,5 @@
 use std::io;
+use colored::Colorize;
 
 fn main() {
     println!("Welcome to Fibonacci number generator!");
@@ -35,7 +36,7 @@ fn main() {
             f2 += f1;
             f1 = f2 - f1;
         }
-        println!("It's {f1}");
+        println!("It's {}", f1.to_string().green());
 
         break;
     }
