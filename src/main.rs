@@ -25,7 +25,7 @@ fn main() {
             continue;
         }
 
-        println!("You inputted {n}");
+        // println!("You inputted {n}");
 
         // The calculating
         let mut f1: u64 = 0;
@@ -35,10 +35,10 @@ fn main() {
             f2 += f1;
             f1 = f2 - f1;
         }
-        println!("{f1}");
+        println!("It's {f1}");
 
         break;
     }
 
-    println!("Enter any key to exit");
+    io::stdin().read_line(&mut String::new()).unwrap();
 }
